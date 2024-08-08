@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+    console.log(ipdataPopupData); // Check if this logs the data correctly
     $.getJSON('https://api.ipdata.co?api-key=' + ipdataPopupData.api_key, function(data) {
         if (data.country_code === 'BG') {
             $('body').append(`

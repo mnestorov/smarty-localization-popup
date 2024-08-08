@@ -17,7 +17,7 @@ if (!defined('WPINC')) {
 }
 
 // Dependencies for the ipdata API client
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Ipdata\ApiClient\Ipdata;
 use Symfony\Component\HttpClient\Psr18Client;
@@ -30,7 +30,7 @@ if (!function_exists('smarty_lp_enqueue_scripts')) {
         wp_enqueue_style('lp-style', plugin_dir_url(__FILE__) . 'localization-popup.css');
 
         // Localize script with popup text and API key
-        wp_localize_script('ipdata-popup-script', 'ipdataPopupData', array(
+        wp_localize_script('lp-script', 'ipdataPopupData', array(
             'bg_text'       => 'Изглежда, че идвате от България. Искате ли да видите: Възможности за доставка за България Съдържание на български',
             'button_text'   => 'Да',
             'bg_url'        => 'https://staging.dr-d.eu/',
