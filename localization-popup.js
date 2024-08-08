@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
                 <div id="smarty-localization-popup">
                     <div id="smarty-localization-popup-content">
                         <p>${ipdataPopupData.bg_text}</p>
-                        <button id="localization-popup-yes">${ipdataPopupData.button_text}</button>
+                        <button id="smarty-localization-popup-yes">${ipdataPopupData.button_text}</button>
                     </div>
                 </div>
             `);
