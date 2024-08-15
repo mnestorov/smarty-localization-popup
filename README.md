@@ -9,7 +9,7 @@
 
 ## Overview
 
-The Smarty Studio Localization Popup for WordPress is a plugin that displays a custom popup to users based on their geographical location using the IPData API. The plugin allows you to dynamically display country-specific content, such as shipping options or localized content, with configurable text and design.
+The **Smarty Studio - Localization Popup for WordPress** is a plugin that displays a custom popup to users based on their geographical location using the IPData API. The plugin allows you to dynamically display country-specific content, such as shipping options or localized content, with configurable text and design.
 
 ## Description
 
