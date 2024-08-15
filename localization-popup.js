@@ -6,11 +6,11 @@ jQuery(document).ready(function($) {
         $('body').append(`
             <div id="smarty-localization-popup">
                 <div id="smarty-localization-popup-content">
-                    <h2><img src="https://www.worldometers.info/img/flags/bu-flag.gif" width="32" height="32" alt="Bulgaria Flag"> Изглежда, че идвате от България</h2>
-                    <h3>Искате ли да видите:</h3>
+                    <h2><img src="${ipdataPopupData.flag_url}" width="32" height="32" alt="${ipdataPopupData.country_name} Flag"> ${ipdataPopupData.popup_heading}</h2>
+                    <h3>${ipdataPopupData.popup_subheading}</h3>
                     <ul>
-                        <li>Възможности за доставка за България</li>
-                        <li>Съдържание на български</li>
+                        <li>${ipdataPopupData.content_option_1}</li>
+                        <li>${ipdataPopupData.content_option_2}</li>
                     </ul>
                     <button id="localization-popup-yes">${ipdataPopupData.button_text}</button>
                 </div>
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
     let ipData = localStorage.getItem('ipData');
     if (ipData) {
         ipData = JSON.parse(ipData);
-        if (ipData.country_code === 'BG') {
+        if (ipData.country_code === ipdataPopupData.country_code) {
             displayPopup();
         }
     } else {
@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
             // Store data in local storage for 24 hours
             localStorage.setItem('ipData', JSON.stringify(data));
             localStorage.setItem('ipDataExpiry', new Date().getTime() + 24 * 60 * 60 * 1000);
-            if (data.country_code === 'BG') {
+            if (data.country_code === ipdataPopupData.country_code) {
                 displayPopup();
             }
         });
