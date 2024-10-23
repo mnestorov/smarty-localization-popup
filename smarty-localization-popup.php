@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: SM - Localization Popup
- * Plugin URI: https://github.dev/smartystudio/smarty-localization-popup
+ * Plugin URI: https://github.dev/mnestorov/smarty-localization-popup
  * Description: Shows a popup based on the user's IP location using IPData API.
  * Version: 1.0.0
  * Author: Smarty Studio | Martin Nestorov
- * Author URI: https://smartystudio.net
+ * Author URI: https://github.dev/mnestorov
  * Text Domain: smarty-localization-popup
  * WC requires at least: 3.5.0
  * WC tested up to: 9.0.2
