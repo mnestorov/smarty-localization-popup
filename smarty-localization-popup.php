@@ -5,7 +5,7 @@
  * Description: Shows a popup based on the user's IP location using IPData API.
  * Version: 1.0.0
  * Author: Smarty Studio | Martin Nestorov
- * Author URI: https://github.dev/mnestorov
+ * Author URI: https://github.com/mnestorov
  * Text Domain: smarty-localization-popup
  * WC requires at least: 3.5.0
  * WC tested up to: 9.0.2
